@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color: rgb(95, 99, 100);
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: rgb(194, 51, 51);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.fa-cart-shopping {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.biggalery img{
+    height: 530px;
+    width: 750px;
+    margin-left: 450px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.biggalery img{
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /*used to smooth transition */
+}
+
+
+.biggalery img:hover {
+    box-shadow: 0 0 20px #def26ccc;
+}
+
+ /* for second image */
+
+.container{
+    position: absolute;
+    top: 170px;
+    left: 140px;
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 4px 15px black;
+}
+
+.container h2{
+    margin-left: 20px;
+}
+
+.container p{
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.location{
+    width: 360px;
+    height: 50px;
+    border: 0.5px solid rgba(206, 201, 201, 0.829); 
+    border-radius: 4px;
+    margin-left: 16px;
+    background-color: #f0f0f0;
+}
+
+.location p{
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.fourcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    max-width: 350px; 
+    margin-top: 10px;
+    margin-left: 13px;
+}
+
+.container1, .container2, .container3, .container4 {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+
+.container1 input, .container2 input {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container3 , .container4{
+    height: 20px;
+}
+
+.select {
+    width: 300px;
+    height: 20px;
+    background-color: #f5078a; /* Primary blue color */
+    color: #fff;               /* White text for good contrast */
+    padding: 12px 24px;        /* Padding for a comfortable clickable area */
+    border: none;              /* Remove default border */
+    border-radius: 5px;        /* Slightly rounded corners */
+    font-size: 16px;           /* Increase font size for readability */
+    cursor: pointer;           /* Pointer cursor on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    margin-left: 25px;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.select:active {
+    background-color: #d00fd6; /* Even darker blue when the button is pressed */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow when pressed */
+}
+
+
+.boxes{
+    margin-top: 100px;
+    display: flex;
+    gap:80px;
+    margin-left: 35px;
+    
+}
+
+.box1,.box2,.box3{
+    width: 350px;
+    height: 200px;
+    background-color:white;
+    box-shadow: #575757 ;
+    border-radius: 14px;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.boxes h3 {
+    margin-bottom: 0;
+    text-align: center;
+}
+.boxes p{
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.boxes a{
+    margin-left: 230px;
+}
+
+.boxes a:hover{
+    color: rgb(6, 96, 29);
+}
+
+.heading{
+    margin-top: 130px;
+    margin-left: 30px;
+    color: rgb(235, 226, 210);
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Two columns */
+    grid-template-rows: repeat(2, 1fr);     /* Three rows */
+    gap: 20px;  /* Space between the images */ 
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gallery Item */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image fills the item without distortion */
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery-item img:hover{
+    transform: scale(1.04);
+}
+

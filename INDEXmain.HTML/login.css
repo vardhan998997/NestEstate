@@ -1,0 +1,123 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #ae2c04); /*Gradient background
+    /* background: content-box radial-gradient(rgb(220, 83, 113), rgb(174, 215, 41)); */
+}
+
+/* Container for the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    width: 400px;
+    text-align: center;
+}
+
+/* On hover, adds a slight shadow for depth */
+.login-box:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+/* Input fields */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input label */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect for inputs */
+.input-box input:focus + label, 
+.input-box input:valid + label {
+    top: -5px;
+    color: #007bff;
+    font-size: 12px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effect on button */
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Register text */
+.register-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.register-text a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on the link */
+.register-text a:hover {
+    color: #ff5722;
+}
+
+

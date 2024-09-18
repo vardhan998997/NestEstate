@@ -1,0 +1,40 @@
+/* General carousel styling */
+#carouselExample {
+    width: 100%;
+    max-width: 1200px; /* Limit max-width to make it responsive */
+    margin: 0 auto;    /* Center the carousel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;    /* Hide overflow for smooth transitions */
+}
+
+/* Carousel inner image styling */
+.carousel-item img {
+    object-fit: cover;   /* Ensure images cover the entire carousel area */
+    height: 500px;       /* Set a fixed height for the carousel */
+    width: 100%;
+}
+
+/* Carousel controls */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;           /* Make the control buttons smaller */
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent background for controls */
+    border-radius: 50%;  /* Make the controls circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%); /* Make the icons white */
+}
+
+/* Add hover effect on controls */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Darken on hover */
+}
+
+/* Visually hidden text for accessibility */
+.visually-hidden {
+    display: none;
+}
